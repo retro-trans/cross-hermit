@@ -1,0 +1,8 @@
+*.iso
+*.xdelta
+*.exe
+*.dll
+*.sav
+*.SAV
+.env
+__pycache__/

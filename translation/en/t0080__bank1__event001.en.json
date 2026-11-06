@@ -1,0 +1,215 @@
+{
+  "schema": 1,
+  "file": "Data/TACTICS/SCRIPT/t0080.bin",
+  "file_sha256": "ac3e30ef3febff04b5b30f762ebaa13b0660b3e582ae1ba14a7497db35fab75a",
+  "category": "battle_binary_dialogue",
+  "bank": 1,
+  "event": 1,
+  "version": 4,
+  "event_sha256": "39630e5eea6990aa9e97e2ed6afa38a57235df44413040b4300cf9565a30435f",
+  "rows": [
+    {
+      "slot": 0,
+      "source_sha256": "5b68dc8d6b3ecbe04e82f252256784586d5bb8867d6bbe9482ac2158fba8b6c4",
+      "target": "Hehe. You've got movement down.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 1,
+      "source_sha256": "f38f420d6e3ac3d4a34f46eb4830fbde3658ca9f1ec31504bf520075cb03d280",
+      "target": " ",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 2,
+      "source_sha256": "64c7cf4ce212413d6ffea7945ecbff24a6e52d36b2146897b84263127966e03e",
+      "target": "Remember: left-click to select a unit...",
+      "status": "reviewed",
+      "notes": "0.1.264 controls adaptation: accuracy, editorial and proofreading review in work/ui/0.1.264/review.json. Matches the implemented mouse/keyboard controls; native page/command allocation retained. Historical target hashes describe earlier wording."
+    },
+    {
+      "slot": 3,
+      "source_sha256": "0cf7ce2e8a9e8a24c9c028a7e1093228b0707a6fbb4008bfc26225b190189806",
+      "target": "...and right-click to move or make a normal attack.",
+      "status": "reviewed",
+      "notes": "0.1.264 controls adaptation: accuracy, editorial and proofreading review in work/ui/0.1.264/review.json. Matches the implemented mouse/keyboard controls; native page/command allocation retained. Historical target hashes describe earlier wording."
+    },
+    {
+      "slot": 4,
+      "source_sha256": "98ee142d33e5703a6b44a3ec095372d47ac3e069949ce36864022d02d56b09c4",
+      "target": "Now, next are deployment and withdrawal...",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending."
+    },
+    {
+      "slot": 6,
+      "source_sha256": "8cc4de069985a87365187049bcd2fdc23e611a1ec671fa4c6d08e3327d6c6918",
+      "target": "It seems we have something to do before that... ...after",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 7,
+      "source_sha256": "4f0648354d094b40865feaa043511512264cec065fe137d2c2571a44da0b1f0d",
+      "target": "all.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 8,
+      "source_sha256": "1ef979156709a7d25c66dffed8d40fc5e6efbb431585242f5f6409b9dbaa2e9f",
+      "target": "Essential when fighting those Crawlers... ...are",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 9,
+      "source_sha256": "d48b43af40a9334f2bb2d08eb1ce8ea6738a531c7c9581380c6b3d3dc80d17b9",
+      "target": "[Normal Attacks].",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 10,
+      "source_sha256": "2fe8ee08c2dc9b922df705483a18cefaea84edb804d158dfd0ec220e770c1b67",
+      "target": "Before we fight, I'll explain [Normal Attacks]... ...to",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 11,
+      "source_sha256": "3d5c194142864af89f5aed919ea59e70407fc7c47b1f331e57f8e669c01d3565",
+      "target": "you.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 12,
+      "source_sha256": "d2af90bc826f3b439d301ce37c535eaef6ed00d04cb16ac53a99375701938841",
+      "target": "A normal attack is a basic attack anyone... ...can use.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 13,
+      "source_sha256": "c77741d2c39565ff228d224adbc892b747a03e257ce653ec744c7d60aedc9824",
+      "target": "Its advantage is that it costs no MP, so you can use it...",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 14,
+      "source_sha256": "a2cc8719ce63035ba7897e97889d24c08ff92c6e007613879978ae7c3541b11e",
+      "target": "...as often as you like.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 15,
+      "source_sha256": "825d2a4c26b158538c4f8fd510d6d33c7e86d3b667d6c77fd6f5c747fae6a0ca",
+      "target": " ",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 16,
+      "source_sha256": "48b045fc2d066f5e603be1b310c93e9576fa2acb6675b242466b20453622819e",
+      "target": "Also, using a priest's normal attack on an ally... ...can",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 17,
+      "source_sha256": "97d4c431ca63d1e586f3ffff1dda342664419c69ff38198577cb367ae605c6f9",
+      "target": "restore HP.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 18,
+      "source_sha256": "75048f64ffe40872a06ead8e09dcf26262e0a95fac862f9f60ef597399751e25",
+      "target": "Now I'll explain how to make a normal attack.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending."
+    },
+    {
+      "slot": 19,
+      "source_sha256": "a261407cdfc6cf78875b542ca8d733278ce3aa4dd606db547d6b5f2d3ee5de43",
+      "target": "Just as with movement, left-click a unit... ...to select it.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 20,
+      "source_sha256": "5bd6a461e27799d23b6199cd5c3238c2a1fa7e57405632e647b6898b44a7307d",
+      "target": " ",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 21,
+      "source_sha256": "3341faf080a928d1ddcbf30ad397b46779110bc766a77b4af62ea63930ef8f67",
+      "target": "With it selected, right-click an enemy unit... ...to start",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 22,
+      "source_sha256": "4c7bf59ccaf5ccd0fdaa933bb79a393bea703de601475f20cc642bc2e4f67d90",
+      "target": "attacking.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 23,
+      "source_sha256": "a95d85bcc5608c40281878e961f048313cd584095ab0ed78efd1ce0cd2b6028e",
+      "target": "When you can attack, the mouse cursor changes... ...so",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 24,
+      "source_sha256": "0e30c0209494f3c5747a91ef304aa1e74d3d4cd8bf309bd517289089cadb66c9",
+      "target": "use that as your guide.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 25,
+      "source_sha256": "6a9ebd4ff9cbbd38e70ff6b655179ad1c356e7197e8af5c670463870b1409395",
+      "target": "Now let's try attacking.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending."
+    },
+    {
+      "slot": 26,
+      "source_sha256": "22823b64f4b4aa4ba498b2c6a91ffec2af68887934e7a9aa3d74c6cd94cbf74b",
+      "target": "Select this unit...",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending."
+    },
+    {
+      "slot": 27,
+      "source_sha256": "2e9a96e60d474251ab81974cc5796fa900d026ee0b5d27ad6f3e828f06f75d4e",
+      "target": "...and attack these enemies.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending."
+    },
+    {
+      "slot": 28,
+      "source_sha256": "65d82c84d789103d9c38d44c65771129314cc6cd7d387309cbb610e0c0cbd544",
+      "target": "Until you've defeated every enemy, do your best, all",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 29,
+      "source_sha256": "1bf2a35bf0fbca73abf5eab1b2e1400fc3838be885810de9c21e73df67aca14d",
+      "target": "right?",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    }
+  ]
+}

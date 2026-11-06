@@ -1,0 +1,299 @@
+{
+  "schema": 1,
+  "file": "Data/TACTICS/SCRIPT/t0080.bin",
+  "file_sha256": "ac3e30ef3febff04b5b30f762ebaa13b0660b3e582ae1ba14a7497db35fab75a",
+  "category": "battle_binary_dialogue",
+  "bank": 0,
+  "event": 3,
+  "version": 4,
+  "event_sha256": "4eeec55843fff2229f6c191a7280143fb4daad40f1a06559fb8f4526baeb9fba",
+  "rows": [
+    {
+      "slot": 0,
+      "source_sha256": "76974bd4b73367aeab952cbc9878a55c476034d3a47303a7e0138ac54d50acce",
+      "target": "Perfect.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending."
+    },
+    {
+      "slot": 1,
+      "source_sha256": "95d7bc5a634dc14343e3a3d17a43e2517a6823c067ce966dd8656838212880d1",
+      "target": "Some skills use other kinds of targets... ...to activate.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 2,
+      "source_sha256": "411e4063c132b86c8109593d595f9b3933599b87e1c23deca1f36046f6d637cc",
+      "target": " ",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 3,
+      "source_sha256": "703e83564ed9b9749aa53752cc614bde9441daf6005f5e9af5a55b4cc844c4a5",
+      "target": "Like normal attacks, you target an enemy... ...with",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 4,
+      "source_sha256": "a6f338ee1b1197cf5e0f5e6f40a39837295f17df992a0cb4556e25e1b3d1af00",
+      "target": "Break Smash or Poison Arrow. Shooting Star targets",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 5,
+      "source_sha256": "457235e6a40a6469105b5c641b9375762ba9eda8a255e3b434efc2cd0cade455",
+      "target": "the user. Holy Purge targets an ally.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 6,
+      "source_sha256": "2317a87e20c62a091b290af2e3654798ed74263cc7e7d505e31adab37178ed28",
+      "target": " ",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 7,
+      "source_sha256": "b7b19957d371795b761165f0ab89df5154e73b28c62b516ad0600803f6cd05b4",
+      "target": "Also, some skills are powerful, but can damage allies...",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending."
+    },
+    {
+      "slot": 8,
+      "source_sha256": "bf35466575523d4318d0dabc47041926f23f8287a8b8358aefb1fd8653110d81",
+      "target": "...as well. Try various skills during your adventures.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 9,
+      "source_sha256": "986448a33a2a4c8493a6e06824c435d05ea9045e166718f02fb3dc40fbe3df4b",
+      "target": " ",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 11,
+      "source_sha256": "7efadba78f53e4800213c1ddf3b97e426f31a8b1182287a037416ea7c85535cc",
+      "target": "...We've gone a little off the subject.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending."
+    },
+    {
+      "slot": 12,
+      "source_sha256": "bb698dee1d657e20ddbbfc0dfae64f8049d5a62609f2607f003b131a35fc6535",
+      "target": "I've got things out of order, but... ...I'd like to explain",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 13,
+      "source_sha256": "9505705b05ffd7527ad307657413971a7970b893397d9ac8c2adc308154bc45e",
+      "target": "deployment.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 14,
+      "source_sha256": "21e5aa0a05baa528c98fa55dd9451fe999e05e902e579a1ef2bbb6e79341bc6a",
+      "target": "...Palmyra.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending."
+    },
+    {
+      "slot": 15,
+      "source_sha256": "fae5da86a8e48fa30f6b6ef9076339dc403e06185eade168ff3fd0de19c26479",
+      "target": "Fana can't practice deployment alone, so could you",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 16,
+      "source_sha256": "8f71fe5fb9d182242e422e41ee1c854f61d4489936d57757c4fa37b3f2b3226b",
+      "target": "help?",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 17,
+      "source_sha256": "69126ef53a06eb7a0c2e24fda4646d3dcc392409e895b42b1badc23b04f56cec",
+      "target": "Yes. I'm standing by.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 18,
+      "source_sha256": "18244dfc2fff43a34146fbbebd76b03df07cbbb66a77f99c9f4118653435c3d3",
+      "target": " ",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 19,
+      "source_sha256": "5b97a4d82f793af57a596bd8fe097d5bc75789abb1345c1ebf809615f3c8ebae",
+      "target": "Now I'll explain how to deploy someone.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending."
+    },
+    {
+      "slot": 20,
+      "source_sha256": "bc0180d7e97294e019b0be8d4f9150dec0b6fe668e2544fbffbe5d1645f001d7",
+      "target": "First, left-click a reserve portrait at the screen edge.",
+      "status": "reviewed",
+      "notes": "0.1.264 controls adaptation: accuracy, editorial and proofreading review in work/ui/0.1.264/review.json. Matches the implemented mouse/keyboard controls; native page/command allocation retained. Historical target hashes describe earlier wording."
+    },
+    {
+      "slot": 21,
+      "source_sha256": "dc86fb977f6a79ae3629b87767f1d2e70ebf12a5bdba8d4e669b7365688df8d4",
+      "target": "This starts deployment targeting.",
+      "status": "reviewed",
+      "notes": "0.1.264 controls adaptation: accuracy, editorial and proofreading review in work/ui/0.1.264/review.json. Matches the implemented mouse/keyboard controls; native page/command allocation retained. Historical target hashes describe earlier wording."
+    },
+    {
+      "slot": 22,
+      "source_sha256": "8ef832d27e643f2fe53802aff808ee34662871691f3d6a93d94847e094f358b5",
+      "target": "Right-click cancels. Click IN to target again.",
+      "status": "reviewed",
+      "notes": "0.1.264 controls adaptation: accuracy, editorial and proofreading review in work/ui/0.1.264/review.json. Matches the implemented mouse/keyboard controls; native page/command allocation retained. Historical target hashes describe earlier wording."
+    },
+    {
+      "slot": 23,
+      "source_sha256": "57527b779d7e8648620bdb972555eb534d68f4621134936e52e872dc8ddeb135",
+      "target": " ",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 24,
+      "source_sha256": "b9ed3fc2d9968221342119619315a85d662b600822b4c864700b17c7726bd905",
+      "target": " ",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 25,
+      "source_sha256": "02a99361756b640895866e671b5e682dea885d8e685a6cb53fa32b7b92838998",
+      "target": "First, choose the person you want to deploy. At the",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 26,
+      "source_sha256": "bdd34df956969685965171848e5988fe7dcb878ec4c3d9bd7f2fc884feebc607",
+      "target": "edge of the screen, left-click Ilion's portrait... ...to",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 27,
+      "source_sha256": "024273c2b98bd5554c069eeed583040f80e0c1c93d3785c82b19b9d740903706",
+      "target": "select it.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 28,
+      "source_sha256": "219abf559292d56d65957c97d8b9eb6d8bd1c73eea655b556dfd94c6d395a32c",
+      "target": "Next, decide who will call them. To deploy, someone",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 29,
+      "source_sha256": "662afb4e26ed235464cc45cbd4ae4109f5c16d5ee8c4edbc83a79908dfa36f13",
+      "target": "must always... ...call you in.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 30,
+      "source_sha256": "01494c1d2f6b0873400ee710383f6fc3961c442bb8a1330f61d6e73a5565c0af",
+      "target": " ",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 31,
+      "source_sha256": "0d92b24239296340dcf059ce1312bcc3ccdcaa3238b45a51ca139f919d219171",
+      "target": "This time, Fana will call Ilion.",
+      "status": "reviewed",
+      "notes": "0.1.264 controls adaptation: accuracy, editorial and proofreading review in work/ui/0.1.264/review.json. Matches the implemented mouse/keyboard controls; native page/command allocation retained. Historical target hashes describe earlier wording."
+    },
+    {
+      "slot": 32,
+      "source_sha256": "e63cfe95e1df68f8f08862998251bb9f73e39116e5b92f71321e31142746514d",
+      "target": "Left-click Fana's unit, please.",
+      "status": "reviewed",
+      "notes": "0.1.264 controls adaptation: accuracy, editorial and proofreading review in work/ui/0.1.264/review.json. Matches the implemented mouse/keyboard controls; native page/command allocation retained. Historical target hashes describe earlier wording."
+    },
+    {
+      "slot": 33,
+      "source_sha256": "a1659b20ac753a4ab67f2005947f27a01786dcb35c64c65e913e9fd10f911f0e",
+      "target": " ",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 34,
+      "source_sha256": "4746e8015b802787f9998b91d9d161094295cacf218cd27ff0ad8aabe0d3a010",
+      "target": "Now let's actually call someone in.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending."
+    },
+    {
+      "slot": 35,
+      "source_sha256": "e280c20dd72d09e48cd960b26d5a2014e3519813107fe4a8dc278311442f9e48",
+      "target": "Now, let's deploy Ilion from the reserves.",
+      "status": "reviewed",
+      "notes": "0.1.264 controls adaptation: accuracy, editorial and proofreading review in work/ui/0.1.264/review.json. Matches the implemented mouse/keyboard controls; native page/command allocation retained. Historical target hashes describe earlier wording."
+    },
+    {
+      "slot": 36,
+      "source_sha256": "6a794b0d055d6241943b467d7a044a0abcf969ccada7c51c52487467ff7b8fc4",
+      "target": " ",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+    },
+    {
+      "slot": 37,
+      "source_sha256": "b6472aad554118495a8368da271b396a9a6586d10eaa1b0e53db28f0f55afa10",
+      "target": "First, left-click Ilion's portrait...",
+      "status": "reviewed",
+      "notes": "0.1.264 controls adaptation: accuracy, editorial and proofreading review in work/ui/0.1.264/review.json. Matches the implemented mouse/keyboard controls; native page/command allocation retained. Historical target hashes describe earlier wording."
+    },
+    {
+      "slot": 38,
+      "source_sha256": "ee6f32b6a79c0184f9337866d570c094ad92fb7d75803cdd830bd2688f40aef2",
+      "target": "...at the screen edge.",
+      "status": "reviewed",
+      "notes": "0.1.264 controls adaptation: accuracy, editorial and proofreading review in work/ui/0.1.264/review.json. Matches the implemented mouse/keyboard controls; native page/command allocation retained. Historical target hashes describe earlier wording."
+    },
+    {
+      "slot": 39,
+      "source_sha256": "770e1119818472a4d2722681ef2502bd595bf49fc8f83156e426a8f72684d391",
+      "target": "Then left-click Fana's unit...",
+      "status": "reviewed",
+      "notes": "0.1.264 controls adaptation: accuracy, editorial and proofreading review in work/ui/0.1.264/review.json. Matches the implemented mouse/keyboard controls; native page/command allocation retained. Historical target hashes describe earlier wording."
+    },
+    {
+      "slot": 40,
+      "source_sha256": "aedbfbacd0e303388dccc5636155c57306f7b9de51ad93e563cc0d499516beef",
+      "target": "...to start calling Ilion in.",
+      "status": "reviewed",
+      "notes": "0.1.264 controls adaptation: accuracy, editorial and proofreading review in work/ui/0.1.264/review.json. Matches the implemented mouse/keyboard controls; native page/command allocation retained. Historical target hashes describe earlier wording."
+    },
+    {
+      "slot": 41,
+      "source_sha256": "37cd0190543d55336fde638468e09131f0fc9cdace6d7b966c351659a2c8e9cb",
+      "target": "Now, please try calling Ilion in successfully.",
+      "status": "reviewed",
+      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending."
+    }
+  ]
+}
