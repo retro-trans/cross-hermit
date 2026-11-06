@@ -10,5 +10,6 @@ First public release, combining the verified translation and game changes throug
 - Tutorial wording updated for left-click selection, right-click movement/normal attacks, icon/F1-F8 skill targeting, left-click confirmation and right-click cancellation.
 - Release version 0.8.0 shown by setup, launcher, uninstaller and game footer.
 - Navy/cream Cross Hermit social-preview artwork matching the retro-trans reference style.
+- README and release notes follow the SRW-Z project format, with contribution links, installation routes, source scope, credits, machine-translation disclosure and testing limits. This documentation update does not change the release files or tag.
 
 Validation includes compiled application tests, inherited compiled/native HUD checks, fresh setup/uninstall and save-preservation fixtures, updater safety/rollback checks, exact ISO reconstruction and release asset checks. This does not constitute a complete live playthrough of every mission or hardware configuration.

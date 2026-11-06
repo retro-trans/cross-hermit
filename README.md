@@ -1,49 +1,68 @@
-# Cross Hermit English
-
-![Cross Hermit English translation patch](docs/assets/social-preview.jpg)
+# Cross Hermit — translation project
 
 English translation and modern Windows support for **Cross Hermit: Guardian of the Far Reaches**.
 
-**[Download version 0.8.0](https://github.com/retro-trans/cross-hermit/releases/tag/v0.8.0)** · **[Report an issue](https://github.com/retro-trans/cross-hermit/issues)**
+![Cross Hermit English translation patch](docs/assets/social-preview.jpg)
 
-## Fresh installation
+## Contribute
+
+The first public version is ready to play, but we have not tested every mission or hardware configuration. Bug reports, proofreading and playtesting are welcome. Join the retro-trans Discord:
+
+**[discord.gg/MssepShjmB](https://discord.gg/MssepShjmB)**
+
+You can also [open an issue](https://github.com/retro-trans/cross-hermit/issues). Include the installed version, what happened, steps to reproduce it and a screenshot where possible.
+
+## Play it
+
+The latest release is **[v0.8.0](https://github.com/retro-trans/cross-hermit/releases/tag/v0.8.0)**, with an ISO xdelta package for fresh installations and launcher updates for supported existing English installations.
+
+It includes English dialogue and interface text, widescreen and text improvements, updated battle controls, optional support Auto casting, and compatibility and gameplay fixes. **This patch includes gameplay adjustments as well as translation.** A complete live playthrough remains pending.
+
+### Apply
+
+| What you have | What to use |
+| --- | --- |
+| Original Japanese `EB2002CH.iso` | `Cross-Hermit-0.8.0-ISO-patch.zip` |
+| Supported English installation, game version 0.1.261 or 0.1.264 | **Check for updates** in `Launcher.exe` |
+
+**Fresh installation**
 
 1. Download and extract `Cross-Hermit-0.8.0-ISO-patch.zip` from the release.
-2. Run `Patch Cross Hermit.cmd`. Select your original Japanese `EB2002CH.iso` and choose a new output filename.
+2. Run `Patch Cross Hermit.cmd`. Select your original Japanese ISO and choose a new output filename.
 3. Mount the patched ISO and run `SETUP.EXE`. Choose a new folder on your hard drive.
-4. Open **Cross Hermit English** from the new desktop/Start menu shortcut, or run `Launcher.exe` in the installed folder.
+4. Open **Cross Hermit English** from its desktop/Start menu shortcut, or run `Launcher.exe` in the installed folder.
 
-The patched ISO includes the complete translation, gameplay/compatibility fixes, Windows Forms setup and launcher, uninstaller and game-local Japanese locale runtime. No separate Locale Emulator installation or system-locale change is needed. The ISO can be unmounted after installation.
+You need your own original disc image. The patch expects this exact source; keep checksum verification enabled:
 
-You need your own original game disc image. The full game ISO is not distributed here. The ISO patch expects this exact source:
+| Source | Expected value |
+| --- | --- |
+| Filename | `EB2002CH.iso` |
+| Size | 659,390,464 bytes |
+| SHA-256 | `34a7a1da0e9bb9da44a7397d6873d91d72bced5229ca0cb46d1555f0f95a93f9` |
 
-- Filename: `EB2002CH.iso`
-- Size: **659,390,464 bytes**
-- SHA-256: `34a7a1da0e9bb9da44a7397d6873d91d72bced5229ca0cb46d1555f0f95a93f9`
+The patched ISO contains the complete current translation, Windows Forms setup and launcher, native uninstaller and game-local Japanese locale runtime. No separate Locale Emulator installation or system-locale change is needed. Unmount the ISO after installation if you wish; the installed game does not need it.
 
-Requirements: Windows 10/11, 64-bit Intel/AMD, Windows PowerShell 5.1 and .NET Framework 4.x. Setup needs at least 2.3 GB of free space.
+Requirements: Windows 10/11 on 64-bit Intel/AMD, Windows PowerShell 5.1 and .NET Framework 4.x. Setup needs at least 2.3 GB of free space.
 
-## Update an existing English installation
+**Existing English installation**
 
-Open `Launcher.exe`, choose **Check for updates**, then install the available update with the game closed. Reopen the launcher afterward.
+Open `Launcher.exe`, choose **Check for updates**, then install the update with the game closed. Reopen the launcher afterward.
 
-Version 0.8.0 supports English game versions **0.1.261** and **0.1.264**, including installations made with installer revisions 0.1.262/0.1.263 that report game version 0.1.261. Other installations should use the fresh-install route. Upgrading an unmodified Japanese installation with the updater is not supported.
+Version 0.8.0 supports English game versions **0.1.261** and **0.1.264**. Installations made with installer revisions 0.1.262/0.1.263 report game version 0.1.261 and are supported too. Other installations should use the fresh-install route. The updater does not support unmodified Japanese installations.
 
-The launcher uses `Cross-Hermit-update.json` and `Cross-Hermit-0.8.0-update.zip` from the release. These are updater assets; use the launcher to apply them. It checks the installation and checksums, backs up replaced files and preserves saves and personal settings.
+The launcher downloads `Cross-Hermit-update.json` and `Cross-Hermit-0.8.0-update.zip`. Use the launcher to apply these assets: it validates the installation and checksums, backs up replaced files and preserves saves and personal settings.
 
-## Included changes
+### What is included
 
-- English dialogue, interface text and offline Skills / Classes & upgrades guides.
-- Widescreen rendering, readable text and corrected interface layouts.
-- Updated selection, skill targeting, optional local support Auto casting and tactical-pause controls.
+- English dialogue, interface text and offline Skills / Classes & upgrades guides in the launcher.
+- Widescreen rendering, readable text, corrected interface layouts and two-line item names.
+- Ctrl/Shift selection, Ctrl+A, same-class double-click selection and tactical pause.
+- Updated skill targeting and optional local support Auto casting, including group support controls.
 - Crash, casting-state, stat-calculation, rendering and performance fixes.
-- Balance adjustments: BAD damage over time reduced by 75%, enemy healing reduced by 50% and Wisp HP reduced by 75%.
-- Enemy targeting prefers enemies over destructible walls unless a wall is explicitly targeted.
-- Bundled Japanese compatibility, disc-independent installed startup, native launcher and save-preserving uninstall.
+- BAD damage over time reduced by 75%, enemy healing reduced by 50% and Wisp HP reduced by 75%.
+- Automatic targeting that prefers enemies over destructible walls unless a wall is explicitly targeted.
 
-This patch includes gameplay adjustments as well as translation. See the release notes for validation limits.
-
-## Basic battle controls
+### Basic battle controls
 
 | Action | Control |
 | --- | --- |
@@ -57,14 +76,48 @@ This patch includes gameplay adjustments as well as translation. See the release
 | Deploy reserves | Select a reserve portrait, then left-click a deployed ally |
 | Tactical pause | Space |
 
-## Saves and uninstall
+### Saves and uninstall
 
-Saves live in the installation's `SaveData` folder. Close the game before copying them. Keep a separate backup before reinstalling or moving to another computer.
+Saves live in the installation's `SaveData` folder. Close the game before copying them, and keep a separate backup before reinstalling or moving to another computer.
 
-Uninstall from Windows Apps, the Start menu or `Uninstall.exe`. The uninstaller first copies and verifies saves, settings and unrecognized files to **Documents/Cross Hermit Backups**, then removes the owned installation. Restore the backed-up `SaveData` folder into a new installation when you want to continue your progress.
+Uninstall from Windows Apps, the Start menu or `Uninstall.exe`. The uninstaller first copies and verifies saves, settings and unrecognized files to **Documents/Cross Hermit Backups**, then removes the owned installation. Restore the backed-up `SaveData` folder into a new installation to continue your progress.
 
-## Project and credits
+## What is here
 
-Published by **retro-trans**. This repository contains release documentation, English-only tutorial exports and the current installer/launcher sources. The ISO patch includes setup source and license notices; the installed files include the matching bundled runtime/font/graphics notices and locale source archives. Original game artwork and game content belong to their respective rights holders. The social-preview composition was generated from supplied project artwork using an image-generation tool.
+| Path | Contents |
+| --- | --- |
+| `src/` | Current launcher, uninstaller, setup, extraction and disc-support sources |
+| `translation/en/` | Three English-only tutorial exports for the revised battle controls |
+| `docs/assets/` | Social-preview artwork and its generation prompt |
+| `CHANGELOG.md` | Public release changes and validation summary |
 
-Version 0.8.0 is the first public test release. Not every mission or hardware configuration has been played through. Report reproducible problems with the game version, steps and a screenshot where possible. Do not include passwords, account credentials or personal files in issue reports.
+This repository contains release documentation, current tool source and selected English exports. The complete local translation toolchain and script collection are not published here. It contains no game ISO, original Japanese script dump, saves or account credentials. GitHub's automatic source archive is the repository snapshot at the release tag; use the release's ISO patch package or launcher updater to play.
+
+## Do not sell this
+
+This patch is free. Do not sell it or anything made with it: no pre-patched discs or images, no paid installations, and no paywalled or ad-gated downloads.
+
+This is an unofficial fan translation. Original game content and artwork belong to their respective rights holders. The separate licenses for published tool source and bundled components still apply.
+
+## Credits
+
+| Role | Contributor |
+| --- | --- |
+| Project direction and playtesting | [binhlt0402](https://github.com/binhlt0402), retro-trans |
+| Translation, editing, tooling and reverse engineering assistance | OpenAI Codex, directed by the project lead |
+
+The translation is machine-produced with large language models and then edited, rather than a hand translation by a fluent translator. Names and terminology follow the project's glossary. Review uses accuracy checks, an editorial pass for clarity and character voice, and final proofreading; substantive wording changes are checked again for meaning.
+
+Thanks to the creators of the bundled locale runtime, fonts, graphics compatibility components and patching/extraction tools. Their notices and applicable source archives accompany the distributed components. `src/LICENSE.txt` covers the new project tools only.
+
+The social-preview composition was generated from supplied Cross Hermit artwork using an image-generation tool.
+
+## Status
+
+**v0.8.0 is the first public 0.x test release.** See [CHANGELOG.md](CHANGELOG.md) and the [release notes](https://github.com/retro-trans/cross-hermit/releases/tag/v0.8.0) for what is included and what was checked.
+
+Validation covers exact ISO reconstruction, fresh setup and uninstall, updater safety and rollback, preservation of synthetic saves/settings, compiled application tests and native HUD checks. These checks do not establish that every mission, opening sequence or hardware configuration works correctly.
+
+### Human proofreading
+
+There is no audited human proofreading line count for this project yet. Machine review passes are not counted as human proofreading, and a complete human review against the Japanese has not been established. Reports and playtesting have informed corrections; further review is welcome through Discord or GitHub issues.
