@@ -1,4 +1,4 @@
-# Patch the ISO with Retro Trans Tools
+# Patch the ISO
 
 Cross Hermit English v0.8.0 supports **Automatic** and **Apply xdelta** in [Retro Trans Tools](https://github.com/retro-trans/retro-trans-tools/releases/latest). Existing Retro Trans 0.5.21 clients can refresh the catalog; no application update is needed for this game entry.
 
@@ -25,6 +25,24 @@ There is no need to download or extract the ISO patch ZIP for Automatic. The sta
 7. Mount the resulting ISO and run `SETUP.EXE`. Start the installed game using its shortcut or `Launcher.exe`.
 
 The ISO includes the complete current game patch, modern setup, native launcher/uninstaller and bundled locale support. The installed-game updater remains part of the English launcher.
+
+## Other patchers
+
+Download `Cross-Hermit-English-0.8.0.xdelta` directly from the release, or extract the identical file from `Cross-Hermit-0.8.0-ISO-patch.zip`. These instructions use the same original ISO and produce the same target listed below.
+
+### DeltaPatcher
+
+Open [DeltaPatcher](https://github.com/marco-calautti/DeltaPatcher/releases), select a copy of your original Japanese ISO as **Original file**, and select `Cross-Hermit-English-0.8.0.xdelta` as the patch. Leave **Checksum validation** enabled and apply the patch. Preserve your untouched original separately: DeltaPatcher can replace the selected file when **Backup original file** is disabled.
+
+### xdelta3 command line
+
+Use the `xdelta3.exe` included in the ISO patch ZIP, or obtain [xdelta3](https://github.com/jmacd/xdelta/releases) separately. On Windows, place the executable, original ISO and patch in one folder, open a terminal there, and run:
+
+```powershell
+.\xdelta3.exe -d -s "EB2002CH.iso" "Cross-Hermit-English-0.8.0.xdelta" "Cross-Hermit-English-0.8.0.iso"
+```
+
+Choose a new output filename and keep checksum verification enabled. Compare the completed ISO's SHA-256 with the table below. Mount it and run `SETUP.EXE` to install the game.
 
 ## Expected files
 

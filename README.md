@@ -38,6 +38,8 @@ To use the standalone package instead:
 
 **Using Retro Trans Tools:** extract the same ISO patch ZIP, open [Retro Trans](https://github.com/retro-trans/retro-trans-tools/releases/latest), and select **Apply xdelta**. Choose your original `EB2002CH.iso`, the extracted `Cross-Hermit-English-0.8.0.xdelta`, and a new output filename ending in `.iso`. Keep **Output format: Original format**, then apply the patch. Mount the resulting ISO and run `SETUP.EXE` as above. See the [tested steps and expected output hash](docs/RETRO-TRANS.md).
 
+**Other patchers:** use [DeltaPatcher](https://github.com/marco-calautti/DeltaPatcher/releases) or [xdelta3](https://github.com/jmacd/xdelta/releases) with the bare `Cross-Hermit-English-0.8.0.xdelta` release asset, or the identical file inside the ISO patch ZIP. See the [DeltaPatcher instructions and manual xdelta3 command](docs/RETRO-TRANS.md#other-patchers). Keep checksum validation enabled and preserve your untouched original ISO.
+
 You need your own original disc image. The patch expects this exact source; keep checksum verification enabled:
 
 | Source | Expected value |
