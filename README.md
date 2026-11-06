@@ -32,6 +32,8 @@ It includes English dialogue and interface text, widescreen and text improvement
 3. Mount the patched ISO and run `SETUP.EXE`. Choose a new folder on your hard drive.
 4. Open **Cross Hermit English** from its desktop/Start menu shortcut, or run `Launcher.exe` in the installed folder.
 
+**Using Retro Trans Tools:** extract the same ISO patch ZIP, open [Retro Trans](https://github.com/retro-trans/retro-trans-tools/releases/latest), and select **Apply xdelta**. Choose your original `EB2002CH.iso`, the extracted `Cross-Hermit-English-0.8.0.xdelta`, and a new output filename ending in `.iso`. Keep **Output format: Original format**, then apply the patch. Mount the resulting ISO and run `SETUP.EXE` as above. See the [tested steps and expected output hash](docs/RETRO-TRANS.md).
+
 You need your own original disc image. The patch expects this exact source; keep checksum verification enabled:
 
 | Source | Expected value |
@@ -89,6 +91,7 @@ Uninstall from Windows Apps, the Start menu or `Uninstall.exe`. The uninstaller 
 | `src/` | Current launcher, uninstaller, setup, extraction and disc-support sources |
 | `translation/en/` | Three English-only tutorial exports for the revised battle controls |
 | `docs/assets/` | Social-preview artwork and its generation prompt |
+| `docs/RETRO-TRANS.md` | Verified Retro Trans Tools ISO-patching instructions |
 | `CHANGELOG.md` | Public release changes and validation summary |
 
 This repository contains release documentation, current tool source and selected English exports. The complete local translation toolchain and script collection are not published here. It contains no game ISO, original Japanese script dump, saves or account credentials. GitHub's automatic source archive is the repository snapshot at the release tag; use the release's ISO patch package or launcher updater to play.
@@ -117,6 +120,8 @@ The social-preview composition was generated from supplied Cross Hermit artwork 
 **v0.8.0 is the first public 0.x test release.** See [CHANGELOG.md](CHANGELOG.md) and the [release notes](https://github.com/retro-trans/cross-hermit/releases/tag/v0.8.0) for what is included and what was checked.
 
 Validation covers exact ISO reconstruction, fresh setup and uninstall, updater safety and rollback, preservation of synthetic saves/settings, compiled application tests and native HUD checks. These checks do not establish that every mission, opening sequence or hardware configuration works correctly.
+
+The published ISO patch ZIP was also downloaded without credentials and applied through Retro Trans 0.5.21's **Apply xdelta** engine. Its output matched the complete release ISO size and SHA-256 hash, with the original preserved.
 
 ### Human proofreading
 
