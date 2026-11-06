@@ -1,0 +1,43 @@
+{
+  "version": "0.8.0",
+  "backend": {
+    "status": "passed",
+    "retro_trans_version": "0.5.21",
+    "mode": "Automatic",
+    "public_catalog": true,
+    "anonymous": true,
+    "source_recognized": "original",
+    "target_recognized": "0.8.0",
+    "route": "original \u2192 0.8.0",
+    "patch_operations": 1,
+    "published_patch_downloaded": true,
+    "cache_initially_empty": true,
+    "target_bytes": 770318336,
+    "target_sha256": "87ad84b9a0fb92657f19d5db2a91e361d8e7f7a2b57a6e31852fa7e3a25d54e2",
+    "original_preserved": true,
+    "already_current_operations": 0,
+    "game_launched": false,
+    "elapsed_seconds": 38.078
+  },
+  "published_windows_app": {
+    "status": "passed",
+    "public_exe": "v0.5.21",
+    "exe_sha256": "ce2cdfb075bf7f6ecd5f43fe09f010080cb0d6f4297aca522afa083601479fab",
+    "mode": "--automatic-binary",
+    "public_catalog": true,
+    "empty_patch_cache": true,
+    "target_bytes": 770318336,
+    "target_sha256": "87ad84b9a0fb92657f19d5db2a91e361d8e7f7a2b57a6e31852fa7e3a25d54e2",
+    "source_preserved": true,
+    "credentials_used": false,
+    "game_launched": false,
+    "elapsed_seconds": 31.39
+  },
+  "hosted_catalog_refresh": "https://github.com/retro-trans/retro-trans-tools/actions/runs/42190093593",
+  "hosted_checks": "https://github.com/retro-trans/retro-trans-tools/actions/runs/42189826153",
+  "existing_catalog_records_preserved": true,
+  "existing_package_payloads_unchanged": true,
+  "release_tag_unchanged": true,
+  "checksum_list_expanded_without_removing_original_entries": true,
+  "catalog_sha256": "63f88911bef69e80a79bd00b7e86f8e8d1139acb42c4bde5f6b36cc5e4870e3d"
+}

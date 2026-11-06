@@ -22,10 +22,14 @@ It includes English dialogue and interface text, widescreen and text improvement
 
 | What you have | What to use |
 | --- | --- |
-| Original Japanese `EB2002CH.iso` | `Cross-Hermit-0.8.0-ISO-patch.zip` |
+| Original Japanese `EB2002CH.iso` | Retro Trans **Automatic**, or `Cross-Hermit-0.8.0-ISO-patch.zip` |
 | Supported English installation, game version 0.1.261 or 0.1.264 | **Check for updates** in `Launcher.exe` |
 
 **Fresh installation**
+
+With [Retro Trans Tools](https://github.com/retro-trans/retro-trans-tools/releases/latest), open **Automatic**, click **Refresh catalog**, browse to your original `EB2002CH.iso`, select **Latest** (0.8.0), and choose a new `.iso` output with **Original format**. Click **Patch**; the app downloads the matching xdelta and verifies both source and output. Mount the resulting ISO and run `SETUP.EXE`.
+
+To use the standalone package instead:
 
 1. Download and extract `Cross-Hermit-0.8.0-ISO-patch.zip` from the release.
 2. Run `Patch Cross Hermit.cmd`. Select your original Japanese ISO and choose a new output filename.
@@ -122,6 +126,8 @@ The social-preview composition was generated from supplied Cross Hermit artwork 
 Validation covers exact ISO reconstruction, fresh setup and uninstall, updater safety and rollback, preservation of synthetic saves/settings, compiled application tests and native HUD checks. These checks do not establish that every mission, opening sequence or hardware configuration works correctly.
 
 The published ISO patch ZIP was also downloaded without credentials and applied through Retro Trans 0.5.21's **Apply xdelta** engine. Its output matched the complete release ISO size and SHA-256 hash, with the original preserved.
+
+Retro Trans **Automatic** was verified with the public catalog and clean download caches, including the released Windows 0.5.21 app's Automatic command. It recognized the original, downloaded the matching patch, verified the exact English ISO and recognized that output as current. See the [verification records](docs/validation/retro-trans-automatic.json).
 
 ### Human proofreading
 
