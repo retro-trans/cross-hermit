@@ -1,0 +1,197 @@
+{
+  "version": "0.8.7",
+  "path": "Data/TACTICS/NetData.bin",
+  "bitmap": 1,
+  "dimensions": [
+    270,
+    137
+  ],
+  "texture_dimensions": [
+    512,
+    256
+  ],
+  "source_sha256": "cc326f26f4ffd67edbb50c2381cf77877e61b23eb49e311254fc98465b7cf470",
+  "patched_sha256": "d087fbac8a104abc8b009f7bbbe28fd547bc84f65bc91e7796d6cc23232137bc",
+  "generated_sha256": "a4cca0966281ba5065a1f87d3c49036f03fa5342bc93e85deefbd45fffd197ef",
+  "rows": [
+    {
+      "id": "heading",
+      "target": "Enter your player name.",
+      "field": [
+        10,
+        9,
+        250,
+        22
+      ],
+      "ink_bounds": [
+        23,
+        10,
+        249,
+        28
+      ],
+      "changed_mask_pixels": 3586
+    },
+    {
+      "id": "confirm",
+      "target": "Confirm",
+      "field": [
+        37,
+        74,
+        84,
+        21
+      ],
+      "ink_bounds": [
+        51,
+        76,
+        109,
+        86
+      ],
+      "changed_mask_pixels": 900
+    },
+    {
+      "id": "cancel",
+      "target": "Cancel",
+      "field": [
+        151,
+        74,
+        88,
+        21
+      ],
+      "ink_bounds": [
+        168,
+        76,
+        217,
+        86
+      ],
+      "changed_mask_pixels": 798
+    },
+    {
+      "id": "confirm-selected",
+      "target": "Confirm",
+      "field": [
+        37,
+        112,
+        84,
+        22
+      ],
+      "ink_bounds": [
+        51,
+        114,
+        109,
+        125
+      ],
+      "changed_mask_pixels": 848
+    },
+    {
+      "id": "cancel-selected",
+      "target": "Cancel",
+      "field": [
+        151,
+        112,
+        88,
+        22
+      ],
+      "ink_bounds": [
+        168,
+        114,
+        217,
+        125
+      ],
+      "changed_mask_pixels": 716
+    }
+  ],
+  "changed_pixels": 6848,
+  "outside_caption_masks_exact": true,
+  "input_field_exact": true,
+  "texture_padding_exact": true,
+  "other_7_bitmaps_exact": true,
+  "executable_unchanged": true,
+  "native": {
+    "passed": true,
+    "cases": [
+      {
+        "selected": 2,
+        "draws": [
+          {
+            "x": 377,
+            "y": 331,
+            "crop": [
+              0,
+              0,
+              270,
+              107
+            ],
+            "priority": 90
+          }
+        ],
+        "stack_balanced": true
+      },
+      {
+        "selected": 0,
+        "draws": [
+          {
+            "x": 377,
+            "y": 331,
+            "crop": [
+              0,
+              0,
+              270,
+              107
+            ],
+            "priority": 90
+          },
+          {
+            "x": 377,
+            "y": 400,
+            "crop": [
+              0,
+              108,
+              136,
+              30
+            ],
+            "priority": 85
+          }
+        ],
+        "stack_balanced": true
+      },
+      {
+        "selected": 1,
+        "draws": [
+          {
+            "x": 377,
+            "y": 331,
+            "crop": [
+              0,
+              0,
+              270,
+              107
+            ],
+            "priority": 90
+          },
+          {
+            "x": 513,
+            "y": 400,
+            "crop": [
+              136,
+              108,
+              134,
+              30
+            ],
+            "priority": 85
+          }
+        ],
+        "stack_balanced": true
+      }
+    ],
+    "bank": 90,
+    "count": 8,
+    "bitmap": 1,
+    "render_tail_executed": true,
+    "resource_binding_and_sprite_submission_stubbed": true,
+    "input_code_unchanged": true,
+    "game_started": false
+  },
+  "game_started": false,
+  "installation_modified": false,
+  "published": false
+}

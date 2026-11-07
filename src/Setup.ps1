@@ -32,7 +32,7 @@ function Set-CHShortcuts234([string]$GameFolder,[string]$Desktop=[Environment]::
 }
 function Register-CHUninstall080([string]$GameFolder,[string]$RegistryPath='HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\CrossHermitEnglish') {
     $null=New-Item -Path $RegistryPath -Force
-    $values=@{DisplayName='Cross Hermit English';DisplayVersion='0.8.0';Publisher='Retro Trans';InstallLocation=$GameFolder;DisplayIcon=(Join-Path $GameFolder 'Launcher.exe');UninstallString=('"'+(Join-Path $GameFolder 'Uninstall.exe')+'"');QuietUninstallString=('"'+(Join-Path $GameFolder 'Uninstall.exe')+'" --quiet')}
+    $values=@{DisplayName='Cross Hermit English';DisplayVersion='0.8.7';Publisher='Retro Trans';InstallLocation=$GameFolder;DisplayIcon=(Join-Path $GameFolder 'Launcher.exe');UninstallString=('"'+(Join-Path $GameFolder 'Uninstall.exe')+'"');QuietUninstallString=('"'+(Join-Path $GameFolder 'Uninstall.exe')+'" --quiet')}
     foreach($n in $values.Keys){$null=New-ItemProperty -LiteralPath $RegistryPath -Name $n -Value $values[$n] -PropertyType String -Force}
     foreach($n in @('NoModify','NoRepair')){$null=New-ItemProperty -LiteralPath $RegistryPath -Name $n -Value 1 -PropertyType DWord -Force}
 }
@@ -66,29 +66,29 @@ function Install-CH233([string]$Target) {
     for($i=0;$i -lt 10;$i++){[Array]::Copy([BitConverter]::GetBytes([int]$defaults[$i]),0,$option,4*$i,4)}
     [IO.File]::WriteAllBytes((Join-Path $stage 'Option.bin'),$option)
     $isoPath='';try{$image=Get-Volume -FilePath (Join-Path $SourceRoot 'data.z')|Get-DiskImage -ErrorAction Stop;$isoPath=$image.ImagePath}catch{}
-    $record=[ordered]@{setup_version='0.8.0';game_version='0.8.0';disc_check_sha256=$manifest.disc_check_sha256;iso_path=$isoPath;installed_at_utc=[DateTime]::UtcNow.ToString('o');disc_required=$false;last_update='0.8.0'}
+    $record=[ordered]@{setup_version='0.8.7';game_version='0.8.7';disc_check_sha256=$manifest.disc_check_sha256;iso_path=$isoPath;installed_at_utc=[DateTime]::UtcNow.ToString('o');disc_required=$false;last_update='0.8.7'}
     [IO.File]::WriteAllText((Join-Path $stage 'EnglishPatch\installation.json'),($record|ConvertTo-Json),[Text.UTF8Encoding]::new($false))
     $resolvedStage=[IO.Path]::GetFullPath($stage)
     if(-not $resolvedStage.StartsWith($targetPath+'.installing-',[StringComparison]::OrdinalIgnoreCase) -or (Split-Path -Parent $resolvedStage) -ine $parent){throw 'Unexpected staging path; installation stopped.'}
     Move-Item -LiteralPath $resolvedStage -Destination $targetPath
     if(-not $NoRegister){$null=Set-CHPaths233 $targetPath $targetPath;Register-CHUninstall080 $targetPath}
     if(-not $NoShortcut){Set-CHShortcuts234 $targetPath}
-    $result=[ordered]@{setup_version='0.8.0';game_version='0.8.0';destination=$targetPath;original_files_verified=7865;registry_written=(-not $NoRegister);shortcut_written=(-not $NoShortcut);game_started=$false;passed=$true}
+    $result=[ordered]@{setup_version='0.8.7';game_version='0.8.7';destination=$targetPath;original_files_verified=7865;registry_written=(-not $NoRegister);shortcut_written=(-not $NoShortcut);game_started=$false;passed=$true}
     $result|ConvertTo-Json|Set-Content -LiteralPath (Join-Path $targetPath 'EnglishPatch\setup-report.json') -Encoding UTF8
     $owned=@(Get-ChildItem -LiteralPath $targetPath -File -Recurse|ForEach-Object {$_.FullName.Substring($targetPath.Length+1).Replace('\','/')})+'EnglishPatch/install-owned.json'
-    [IO.File]::WriteAllText((Join-Path $targetPath 'EnglishPatch/install-owned.json'),([ordered]@{product='CrossHermitEnglish';install_root=$targetPath;version='0.8.0';files=$owned}|ConvertTo-Json -Depth 5),[Text.UTF8Encoding]::new($false))
+    [IO.File]::WriteAllText((Join-Path $targetPath 'EnglishPatch/install-owned.json'),([ordered]@{product='CrossHermitEnglish';install_root=$targetPath;version='0.8.7';files=$owned}|ConvertTo-Json -Depth 5),[Text.UTF8Encoding]::new($false))
     Write-CHSetupStatus233 'Installed. Open Launcher.exe or the Cross Hermit English shortcut to play.'
     return [pscustomobject]$result
 }
-if($Plan){[ordered]@{version='0.8.0';destination=$Destination;source=$SourceRoot;original_archive_preserved=$true;original_files=7865;game_version='0.8.0';registry_written=$false;game_started=$false;destination_written=$false}|ConvertTo-Json;return}
+if($Plan){[ordered]@{version='0.8.7';destination=$Destination;source=$SourceRoot;original_archive_preserved=$true;original_files=7865;game_version='0.8.7';registry_written=$false;game_started=$false;destination_written=$false}|ConvertTo-Json;return}
 if($NoGui){Install-CH233 $Destination;return}
 Add-Type -AssemblyName System.Windows.Forms,System.Drawing
 [Windows.Forms.Application]::EnableVisualStyles()
 [Windows.Forms.Application]::SetCompatibleTextRenderingDefault($false)
-$form=[Windows.Forms.Form]::new();$form.Text='Cross Hermit English · Setup 0.8.0';$form.ClientSize=[Drawing.Size]::new(660,332);$form.Font=[Drawing.Font]::new('Segoe UI',9);$form.AutoScaleDimensions=[Drawing.SizeF]::new(7,15);$form.AutoScaleMode='Font';$form.StartPosition='CenterScreen';$form.FormBorderStyle='FixedDialog';$form.MaximizeBox=$false;$form.BackColor=[Drawing.SystemColors]::Control
+$form=[Windows.Forms.Form]::new();$form.Text='Cross Hermit English · Setup 0.8.7';$form.ClientSize=[Drawing.Size]::new(660,332);$form.Font=[Drawing.Font]::new('Segoe UI',9);$form.AutoScaleDimensions=[Drawing.SizeF]::new(7,15);$form.AutoScaleMode='Font';$form.StartPosition='CenterScreen';$form.FormBorderStyle='FixedDialog';$form.MaximizeBox=$false;$form.BackColor=[Drawing.SystemColors]::Control
 $overview=[Windows.Forms.GroupBox]::new();$overview.Text='Cross Hermit English';$overview.SetBounds(12,12,636,102);$form.Controls.Add($overview)
 $intro=[Windows.Forms.Label]::new();$intro.Text="English translation, game fixes and Japanese compatibility are included.`r`nThe disc image is not needed after installation.";$intro.SetBounds(14,24,608,38);$overview.Controls.Add($intro)
-$version=[Windows.Forms.Label]::new();$version.Text='Setup version: 0.8.0   ·   Game version: 0.8.0';$version.ForeColor=[Drawing.SystemColors]::GrayText;$version.SetBounds(14,70,608,22);$overview.Controls.Add($version)
+$version=[Windows.Forms.Label]::new();$version.Text='Setup version: 0.8.7   ·   Game version: 0.8.7';$version.ForeColor=[Drawing.SystemColors]::GrayText;$version.SetBounds(14,70,608,22);$overview.Controls.Add($version)
 $location=[Windows.Forms.GroupBox]::new();$location.Text='Install location';$location.SetBounds(12,126,636,95);$form.Controls.Add($location)
 $folder=[Windows.Forms.TextBox]::new();$folder.Text=$Destination;$folder.SetBounds(14,27,494,24);$folder.TabIndex=0;$location.Controls.Add($folder)
 $browse=[Windows.Forms.Button]::new();$browse.Text='Browse...';$browse.SetBounds(520,24,102,28);$browse.UseVisualStyleBackColor=$true;$browse.TabIndex=1;$location.Controls.Add($browse)

@@ -1,0 +1,22 @@
+{
+  "version": "0.8.7",
+  "passed": true,
+  "fresh_install_files_verified": 7985,
+  "generated_files": [
+    "englishpatch/install-owned.json",
+    "englishpatch/installation.json",
+    "englishpatch/setup-report.json",
+    "option.bin"
+  ],
+  "native_shortcuts": 4,
+  "uninstall_registration": true,
+  "compiled_launcher_version": "0.8.7",
+  "locale_bundled": true,
+  "no_disc_required": true,
+  "no_developer_saves_or_settings": true,
+  "fresh_uninstall_tested": true,
+  "synthetic_save_backup_verified": true,
+  "current_installation_untouched": true,
+  "game_started": false,
+  "live_game_session_tested": false
+}

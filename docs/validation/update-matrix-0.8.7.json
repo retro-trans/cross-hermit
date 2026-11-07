@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "version": "0.8.7",
+  "synthetic_critical_source_fixtures": true,
+  "installed_user_game_modified": false,
+  "game_started": false,
+  "cases": [
+    {
+      "fixture": "PROJECT\\work\\source\\release087-update-0.1.261-cf943c5be424462f90f7bd946db96fc7",
+      "passed": true,
+      "personal_files_preserved": 6,
+      "files_verified": 533,
+      "native_launcher_plan_verified": true,
+      "source_executable_sha256": "ab1aea7af2d698488f7cc27a7a32a324c26898e931bbcd5bf7715c168fc02e2b",
+      "launcher_backup_verified": true,
+      "source_version": "0.1.261",
+      "target_version": "0.8.7"
+    },
+    {
+      "fixture": "PROJECT\\work\\source\\release087-update-0.1.264-c7d22817e4744767bde35df2c51c88e9",
+      "passed": true,
+      "personal_files_preserved": 6,
+      "files_verified": 533,
+      "native_launcher_plan_verified": true,
+      "source_executable_sha256": "ab1aea7af2d698488f7cc27a7a32a324c26898e931bbcd5bf7715c168fc02e2b",
+      "launcher_backup_verified": true,
+      "source_version": "0.1.264",
+      "target_version": "0.8.7"
+    },
+    {
+      "fixture": "PROJECT\\work\\source\\release087-update-0.8.0-b53b637d96a6450bb880a7852b4baac2",
+      "passed": true,
+      "personal_files_preserved": 6,
+      "files_verified": 533,
+      "native_launcher_plan_verified": true,
+      "source_executable_sha256": "ab1aea7af2d698488f7cc27a7a32a324c26898e931bbcd5bf7715c168fc02e2b",
+      "launcher_backup_verified": true,
+      "source_version": "0.8.0",
+      "target_version": "0.8.7"
+    },
+    {
+      "fixture": "PROJECT\\work\\source\\release087-update-0.8.1-5ea579056b0f41a7b8e53626af5ddf87",
+      "passed": true,
+      "personal_files_preserved": 6,
+      "files_verified": 533,
+      "native_launcher_plan_verified": true,
+      "source_executable_sha256": "ab1aea7af2d698488f7cc27a7a32a324c26898e931bbcd5bf7715c168fc02e2b",
+      "launcher_backup_verified": true,
+      "source_version": "0.8.1",
+      "target_version": "0.8.7"
+    },
+    {
+      "fixture": "PROJECT\\work\\source\\release087-update-0.8.2-cb931705f24b49db9260e76233d342ae",
+      "passed": true,
+      "personal_files_preserved": 6,
+      "files_verified": 533,
+      "native_launcher_plan_verified": true,
+      "source_executable_sha256": "ab1aea7af2d698488f7cc27a7a32a324c26898e931bbcd5bf7715c168fc02e2b",
+      "launcher_backup_verified": true,
+      "source_version": "0.8.2",
+      "target_version": "0.8.7"
+    },
+    {
+      "fixture": "PROJECT\\work\\source\\release087-update-0.8.3-e4028185b4ab459b81197f48f78cb6d0",
+      "passed": true,
+      "personal_files_preserved": 6,
+      "files_verified": 533,
+      "native_launcher_plan_verified": true,
+      "source_executable_sha256": "1528cdd767da95c91e1566a3384d773a9146db15fff190a654fd85f581c92670",
+      "launcher_backup_verified": true,
+      "source_version": "0.8.3",
+      "target_version": "0.8.7"
+    },
+    {
+      "fixture": "PROJECT\\work\\source\\release087-update-0.8.4-5b3fb5f3340f422488de2d21648c1740",
+      "passed": true,
+      "personal_files_preserved": 6,
+      "files_verified": 533,
+      "native_launcher_plan_verified": true,
+      "source_executable_sha256": "1528cdd767da95c91e1566a3384d773a9146db15fff190a654fd85f581c92670",
+      "launcher_backup_verified": true,
+      "source_version": "0.8.4",
+      "target_version": "0.8.7"
+    },
+    {
+      "fixture": "PROJECT\\work\\source\\release087-update-0.8.5-24b85768311c430d8bc85d7524f11e81",
+      "passed": true,
+      "personal_files_preserved": 6,
+      "files_verified": 533,
+      "native_launcher_plan_verified": true,
+      "source_executable_sha256": "1528cdd767da95c91e1566a3384d773a9146db15fff190a654fd85f581c92670",
+      "launcher_backup_verified": true,
+      "source_version": "0.8.5",
+      "target_version": "0.8.7"
+    },
+    {
+      "fixture": "PROJECT\\work\\source\\release087-update-0.8.6-0539b5bd95ab42c8870cc6e3a8caa904",
+      "passed": true,
+      "personal_files_preserved": 6,
+      "files_verified": 533,
+      "native_launcher_plan_verified": true,
+      "source_executable_sha256": "1528cdd767da95c91e1566a3384d773a9146db15fff190a654fd85f581c92670",
+      "launcher_backup_verified": true,
+      "source_version": "0.8.6",
+      "target_version": "0.8.7"
+    }
+  ]
+}

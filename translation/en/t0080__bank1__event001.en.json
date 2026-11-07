@@ -25,16 +25,16 @@
     {
       "slot": 2,
       "source_sha256": "64c7cf4ce212413d6ffea7945ecbff24a6e52d36b2146897b84263127966e03e",
-      "target": "Remember: left-click to select a unit...",
+      "target": "Remember: left-click to select a unit",
       "status": "reviewed",
-      "notes": "0.1.264 controls adaptation: accuracy, editorial and proofreading review in work/ui/0.1.264/review.json. Matches the implemented mouse/keyboard controls; native page/command allocation retained. Historical target hashes describe earlier wording."
+      "notes": "0.8.2 tutorial punctuation correction: words/tokens unchanged; accuracy, editorial and proofreading review in work/ui/0.8.2/review.json. Native text slots and commands retained."
     },
     {
       "slot": 3,
       "source_sha256": "0cf7ce2e8a9e8a24c9c028a7e1093228b0707a6fbb4008bfc26225b190189806",
-      "target": "...and right-click to move or make a normal attack.",
+      "target": "and right-click to move or make a normal attack.",
       "status": "reviewed",
-      "notes": "0.1.264 controls adaptation: accuracy, editorial and proofreading review in work/ui/0.1.264/review.json. Matches the implemented mouse/keyboard controls; native page/command allocation retained. Historical target hashes describe earlier wording."
+      "notes": "0.8.2 tutorial punctuation correction: words/tokens unchanged; accuracy, editorial and proofreading review in work/ui/0.8.2/review.json. Native text slots and commands retained."
     },
     {
       "slot": 4,
@@ -46,9 +46,9 @@
     {
       "slot": 6,
       "source_sha256": "8cc4de069985a87365187049bcd2fdc23e611a1ec671fa4c6d08e3327d6c6918",
-      "target": "It seems we have something to do before that... ...after",
+      "target": "It seems we have something to do before that, after",
       "status": "reviewed",
-      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+      "notes": "0.8.2 tutorial punctuation correction: words/tokens unchanged; accuracy, editorial and proofreading review in work/ui/0.8.2/review.json. Native text slots and commands retained."
     },
     {
       "slot": 7,
@@ -60,9 +60,9 @@
     {
       "slot": 8,
       "source_sha256": "1ef979156709a7d25c66dffed8d40fc5e6efbb431585242f5f6409b9dbaa2e9f",
-      "target": "Essential when fighting those Crawlers... ...are",
+      "target": "Essential when fighting those Crawlers are",
       "status": "reviewed",
-      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+      "notes": "0.8.2 tutorial punctuation correction: words/tokens unchanged; accuracy, editorial and proofreading review in work/ui/0.8.2/review.json. Native text slots and commands retained."
     },
     {
       "slot": 9,
@@ -74,9 +74,9 @@
     {
       "slot": 10,
       "source_sha256": "2fe8ee08c2dc9b922df705483a18cefaea84edb804d158dfd0ec220e770c1b67",
-      "target": "Before we fight, I'll explain [Normal Attacks]... ...to",
+      "target": "Before we fight, I'll explain [Normal Attacks] to",
       "status": "reviewed",
-      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+      "notes": "0.8.2 tutorial punctuation correction: words/tokens unchanged; accuracy, editorial and proofreading review in work/ui/0.8.2/review.json. Native text slots and commands retained."
     },
     {
       "slot": 11,
@@ -88,23 +88,23 @@
     {
       "slot": 12,
       "source_sha256": "d2af90bc826f3b439d301ce37c535eaef6ed00d04cb16ac53a99375701938841",
-      "target": "A normal attack is a basic attack anyone... ...can use.",
+      "target": "A normal attack is a basic attack anyone can use.",
       "status": "reviewed",
-      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+      "notes": "0.8.2 tutorial punctuation correction: words/tokens unchanged; accuracy, editorial and proofreading review in work/ui/0.8.2/review.json. Native text slots and commands retained."
     },
     {
       "slot": 13,
       "source_sha256": "c77741d2c39565ff228d224adbc892b747a03e257ce653ec744c7d60aedc9824",
-      "target": "Its advantage is that it costs no MP, so you can use it...",
+      "target": "Its advantage is that it costs no MP, so you can use it",
       "status": "reviewed",
-      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+      "notes": "0.8.2 tutorial punctuation correction: words/tokens unchanged; accuracy, editorial and proofreading review in work/ui/0.8.2/review.json. Native text slots and commands retained."
     },
     {
       "slot": 14,
       "source_sha256": "a2cc8719ce63035ba7897e97889d24c08ff92c6e007613879978ae7c3541b11e",
-      "target": "...as often as you like.",
+      "target": "as often as you like.",
       "status": "reviewed",
-      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+      "notes": "0.8.2 tutorial punctuation correction: words/tokens unchanged; accuracy, editorial and proofreading review in work/ui/0.8.2/review.json. Native text slots and commands retained."
     },
     {
       "slot": 15,
@@ -116,9 +116,9 @@
     {
       "slot": 16,
       "source_sha256": "48b045fc2d066f5e603be1b310c93e9576fa2acb6675b242466b20453622819e",
-      "target": "Also, using a priest's normal attack on an ally... ...can",
+      "target": "Also, using a priest's normal attack on an ally can",
       "status": "reviewed",
-      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+      "notes": "0.8.2 tutorial punctuation correction: words/tokens unchanged; accuracy, editorial and proofreading review in work/ui/0.8.2/review.json. Native text slots and commands retained."
     },
     {
       "slot": 17,
@@ -137,9 +137,9 @@
     {
       "slot": 19,
       "source_sha256": "a261407cdfc6cf78875b542ca8d733278ce3aa4dd606db547d6b5f2d3ee5de43",
-      "target": "Just as with movement, left-click a unit... ...to select it.",
+      "target": "Just as with movement, left-click a unit to select it.",
       "status": "reviewed",
-      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+      "notes": "0.8.2 tutorial punctuation correction: words/tokens unchanged; accuracy, editorial and proofreading review in work/ui/0.8.2/review.json. Native text slots and commands retained."
     },
     {
       "slot": 20,
@@ -151,9 +151,9 @@
     {
       "slot": 21,
       "source_sha256": "3341faf080a928d1ddcbf30ad397b46779110bc766a77b4af62ea63930ef8f67",
-      "target": "With it selected, right-click an enemy unit... ...to start",
+      "target": "With it selected, right-click an enemy unit to start",
       "status": "reviewed",
-      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+      "notes": "0.8.2 tutorial punctuation correction: words/tokens unchanged; accuracy, editorial and proofreading review in work/ui/0.8.2/review.json. Native text slots and commands retained."
     },
     {
       "slot": 22,
@@ -165,9 +165,9 @@
     {
       "slot": 23,
       "source_sha256": "a95d85bcc5608c40281878e961f048313cd584095ab0ed78efd1ce0cd2b6028e",
-      "target": "When you can attack, the mouse cursor changes... ...so",
+      "target": "When you can attack, the mouse cursor changes, so",
       "status": "reviewed",
-      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending. Contextual continuation review0.1.203: native page allocation, controls and measured fit checked. Historical target hashes do not identify this new target."
+      "notes": "0.8.2 tutorial punctuation correction: words/tokens unchanged; accuracy, editorial and proofreading review in work/ui/0.8.2/review.json. Native text slots and commands retained."
     },
     {
       "slot": 24,
@@ -193,9 +193,9 @@
     {
       "slot": 27,
       "source_sha256": "2e9a96e60d474251ab81974cc5796fa900d026ee0b5d27ad6f3e828f06f75d4e",
-      "target": "...and attack these enemies.",
+      "target": "and attack these enemies.",
       "status": "reviewed",
-      "notes": "Separate battle meaning review passed; exact source/target hashes: docs/battle-meaning-review-0.1.31.json. Context and uncertainties: docs/battle-decisions-0.1.31.md. Gameplay/layout QA pending."
+      "notes": "0.8.2 tutorial punctuation correction: words/tokens unchanged; accuracy, editorial and proofreading review in work/ui/0.8.2/review.json. Native text slots and commands retained."
     },
     {
       "slot": 28,

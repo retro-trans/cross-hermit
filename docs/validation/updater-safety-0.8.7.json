@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "cases": 43,
+  "rollback": true,
+  "protected_files": 6,
+  "fixture": "PROJECT\\work\\ui\\iso-0.8.7\\updater-fixture-a696f92c65594bc6a360235b494dfbe6",
+  "release_published": false,
+  "game_started": false
+}

@@ -6,7 +6,7 @@ English translation and modern Windows support for **Cross Hermit: Guardian of t
 
 ## Contribute
 
-The first public version is ready to play, but we have not tested every mission or hardware configuration. Bug reports, proofreading and playtesting are welcome. Join the retro-trans Discord:
+The public test version is ready to play, but we have not tested every mission or hardware configuration. Bug reports, proofreading and playtesting are welcome. Join the retro-trans Discord:
 
 **[discord.gg/MssepShjmB](https://discord.gg/MssepShjmB)**
 
@@ -14,7 +14,7 @@ You can also [open an issue](https://github.com/retro-trans/cross-hermit/issues)
 
 ## Play it
 
-The latest release is **[v0.8.0](https://github.com/retro-trans/cross-hermit/releases/tag/v0.8.0)**, with an ISO xdelta package for fresh installations and launcher updates for supported existing English installations.
+The latest release is **[v0.8.7](https://github.com/retro-trans/cross-hermit/releases/tag/v0.8.7)**, with an ISO xdelta package for fresh installations and launcher updates for supported existing English installations.
 
 It includes English dialogue and interface text, widescreen and text improvements, updated battle controls, optional support Auto casting, and compatibility and gameplay fixes. **This patch includes gameplay adjustments as well as translation.** A complete live playthrough remains pending.
 
@@ -22,23 +22,23 @@ It includes English dialogue and interface text, widescreen and text improvement
 
 | What you have | What to use |
 | --- | --- |
-| Original Japanese `EB2002CH.iso` | Retro Trans **Automatic**, or `Cross-Hermit-0.8.0-ISO-patch.zip` |
-| Supported English installation, game version 0.1.261 or 0.1.264 | **Check for updates** in `Launcher.exe` |
+| Original Japanese `EB2002CH.iso` | Retro Trans **Automatic**, or `Cross-Hermit-0.8.7-ISO-patch.zip` |
+| Supported English installation, including 0.8.0 | **Check for updates** in `Launcher.exe` |
 
 **Fresh installation**
 
-With [Retro Trans Tools](https://github.com/retro-trans/retro-trans-tools/releases/latest), open **Automatic**, click **Refresh catalog**, browse to your original `EB2002CH.iso`, select **Latest** (0.8.0), and choose a new `.iso` output with **Original format**. Click **Patch**; the app downloads the matching xdelta and verifies both source and output. Mount the resulting ISO and run `SETUP.EXE`.
+With [Retro Trans Tools](https://github.com/retro-trans/retro-trans-tools/releases/latest), open **Automatic**, click **Refresh catalog**, browse to your original `EB2002CH.iso`, select **Latest** (0.8.7), and choose a new `.iso` output with **Original format**. Click **Patch**; the app downloads the matching xdelta and verifies both source and output. Mount the resulting ISO and run `SETUP.EXE`.
 
 To use the standalone package instead:
 
-1. Download and extract `Cross-Hermit-0.8.0-ISO-patch.zip` from the release.
+1. Download and extract `Cross-Hermit-0.8.7-ISO-patch.zip` from the release.
 2. Run `Patch Cross Hermit.cmd`. Select your original Japanese ISO and choose a new output filename.
 3. Mount the patched ISO and run `SETUP.EXE`. Choose a new folder on your hard drive.
 4. Open **Cross Hermit English** from its desktop/Start menu shortcut, or run `Launcher.exe` in the installed folder.
 
-**Using Retro Trans Tools:** extract the same ISO patch ZIP, open [Retro Trans](https://github.com/retro-trans/retro-trans-tools/releases/latest), and select **Apply xdelta**. Choose your original `EB2002CH.iso`, the extracted `Cross-Hermit-English-0.8.0.xdelta`, and a new output filename ending in `.iso`. Keep **Output format: Original format**, then apply the patch. Mount the resulting ISO and run `SETUP.EXE` as above. See the [tested steps and expected output hash](docs/RETRO-TRANS.md).
+**Using Retro Trans Tools:** extract the same ISO patch ZIP, open [Retro Trans](https://github.com/retro-trans/retro-trans-tools/releases/latest), and select **Apply xdelta**. Choose your original `EB2002CH.iso`, the extracted `Cross-Hermit-English-0.8.7.xdelta`, and a new output filename ending in `.iso`. Keep **Output format: Original format**, then apply the patch. Mount the resulting ISO and run `SETUP.EXE` as above. See the [tested steps and expected output hash](docs/RETRO-TRANS.md).
 
-**Other patchers:** use [DeltaPatcher](https://github.com/marco-calautti/DeltaPatcher/releases) or [xdelta3](https://github.com/jmacd/xdelta/releases) with the bare `Cross-Hermit-English-0.8.0.xdelta` release asset, or the identical file inside the ISO patch ZIP. See the [DeltaPatcher instructions and manual xdelta3 command](docs/RETRO-TRANS.md#other-patchers). Keep checksum validation enabled and preserve your untouched original ISO.
+**Other patchers:** use [DeltaPatcher](https://github.com/marco-calautti/DeltaPatcher/releases) or [xdelta3](https://github.com/jmacd/xdelta/releases) with the bare `Cross-Hermit-English-0.8.7.xdelta` release asset, or the identical file inside the ISO patch ZIP. See the [DeltaPatcher instructions and manual xdelta3 command](docs/RETRO-TRANS.md#other-patchers). Keep checksum validation enabled and preserve your untouched original ISO.
 
 You need your own original disc image. The patch expects this exact source; keep checksum verification enabled:
 
@@ -54,11 +54,20 @@ Requirements: Windows 10/11 on 64-bit Intel/AMD, Windows PowerShell 5.1 and .NET
 
 **Existing English installation**
 
-Open `Launcher.exe`, choose **Check for updates**, then install the update with the game closed. Reopen the launcher afterward.
+Open `Launcher.exe`, choose **Check for updates**, then install the update with the game closed. Reopen the launcher afterward. From 0.8.7, the launcher asks **Update now?** as soon as it finds a new version: choose **Yes** to begin or **No** to postpone. The older 0.8.0 launcher requires a second click to install this update.
 
-Version 0.8.0 supports English game versions **0.1.261** and **0.1.264**. Installations made with installer revisions 0.1.262/0.1.263 report game version 0.1.261 and are supported too. Other installations should use the fresh-install route. The updater does not support unmodified Japanese installations.
+Version 0.8.7 supports English game versions **0.1.261**, **0.1.264** and **0.8.0–0.8.6**. Installations made with installer revisions 0.1.262/0.1.263 report game version 0.1.261 and are supported too. Other installations should use the fresh-install route. The updater does not support unmodified Japanese installations.
 
-The launcher downloads `Cross-Hermit-update.json` and `Cross-Hermit-0.8.0-update.zip`. Use the launcher to apply these assets: it validates the installation and checksums, backs up replaced files and preserves saves and personal settings.
+The launcher downloads `Cross-Hermit-update.json` and `Cross-Hermit-0.8.7-update.zip`. Use the launcher to apply these assets: it validates the installation and checksums, backs up replaced files and preserves saves and personal settings.
+
+### New in 0.8.7
+
+- Correct ultrawide window sizing, aspect ratio and high-DPI scaling, including 3440×1440 at 225% display scale.
+- Remove duplicated tutorial ellipses and fit descriptions to their panels, including location/character articles and deployment help. Shorten the compact attack-type label to **Phys.**
+- Replace the captions on 36 tutorial pages and 10 shared resources with reviewed English images, preserving artwork outside the caption regions. Illustrated screenshots can still contain original Japanese text.
+- Remove long manual-page fades and shorten fixed navigation waits. Resource loading still takes time. Story/opening/battle-event timing is unchanged.
+- Ask **Update now?** when the launcher finds a new version.
+- Translate the player-name heading and both normal/highlighted **Confirm** and **Cancel** buttons.
 
 ### What is included
 
@@ -95,7 +104,7 @@ Uninstall from Windows Apps, the Start menu or `Uninstall.exe`. The uninstaller 
 | Path | Contents |
 | --- | --- |
 | `src/` | Current launcher, uninstaller, setup, extraction and disc-support sources |
-| `translation/en/` | Three English-only tutorial exports for the revised battle controls |
+| `translation/en/` | Selected English-only tutorial and player-name UI exports |
 | `docs/assets/` | Social-preview artwork and its generation prompt |
 | `docs/RETRO-TRANS.md` | Verified Retro Trans Tools ISO-patching instructions |
 | `CHANGELOG.md` | Public release changes and validation summary |
@@ -123,13 +132,13 @@ The social-preview composition was generated from supplied Cross Hermit artwork 
 
 ## Status
 
-**v0.8.0 is the first public 0.x test release.** See [CHANGELOG.md](CHANGELOG.md) and the [release notes](https://github.com/retro-trans/cross-hermit/releases/tag/v0.8.0) for what is included and what was checked.
+**v0.8.7 is the current public test release; v0.8.0 was the first public release.** See [CHANGELOG.md](CHANGELOG.md) and the [release notes](https://github.com/retro-trans/cross-hermit/releases/tag/v0.8.7).
 
-Validation covers exact ISO reconstruction, fresh setup and uninstall, updater safety and rollback, preservation of synthetic saves/settings, compiled application tests and native HUD checks. These checks do not establish that every mission, opening sequence or hardware configuration works correctly.
+Validation covers all 7,985 fresh-install file hashes, compiled setup startup, native uninstall with a verified synthetic save backup, nine supported English update fixtures, 43 updater safety/rollback checks and 34 native application checks. The confirmation flow has 12 offline cases, and the game changes have compiled HUD/native resource and layout checks. Your saves and settings are excluded from distribution.
 
-The published ISO patch ZIP was also downloaded without credentials and applied through Retro Trans 0.5.21's **Apply xdelta** engine. Its output matched the complete release ISO size and SHA-256 hash, with the original preserved.
+The ISO patch was decoded back to the complete expected ISO and all original disc files were verified unchanged. Release validation also checks anonymous updater downloads and both Retro Trans **Automatic** and **Apply xdelta**, including the released Windows app, against the public assets. See [ISO patching verification](docs/RETRO-TRANS.md).
 
-Retro Trans **Automatic** was verified with the public catalog and clean download caches, including the released Windows 0.5.21 app's Automatic command. It recognized the original, downloaded the matching patch, verified the exact English ISO and recognized that output as current. See the [verification records](docs/validation/retro-trans-automatic.json).
+These checks do not establish that every mission, opening sequence or hardware configuration works correctly. A complete live playthrough remains pending. The user's installed game was not changed or started during release testing.
 
 ### Human proofreading
 

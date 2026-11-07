@@ -1,0 +1,24 @@
+{
+  "version": "0.8.6",
+  "passed": true,
+  "cases": 12,
+  "scenarios": [
+    "Available + Yes prompts after cleanup and starts update on first click",
+    "Available + No postpones and keeps all controls usable",
+    "Retry after No asks again, then Yes starts once",
+    "Busy click cannot duplicate confirmation or update",
+    "No offer for {\"state\":\"current\",\"message\":\"Already current.\"}",
+    "No offer for {\"state\":\"error\",\"version\":\"0.8.7\",\"message\":\"Offline.\"}",
+    "No offer for {\"state\":\"available\",\"version\":\"\",\"message\":\"No version.\"}",
+    "No offer for not json",
+    "No offer for missing result",
+    "Handoff failure is shown and can be retried",
+    "Non-Yes response never starts update",
+    "Production executable contains no test delegates"
+  ],
+  "game_started": false,
+  "installer_started": false,
+  "network_used": false,
+  "confirmation_and_handoff_stubbed": true,
+  "installation_modified": false
+}

@@ -7,15 +7,15 @@ using System.Diagnostics;
 using System.Security.Cryptography;
 using System.Web.Script.Serialization;
 using Microsoft.Win32;
-[assembly:System.Reflection.AssemblyVersion("0.8.0.0")]
-[assembly:System.Reflection.AssemblyFileVersion("0.8.0.0")]
+[assembly:System.Reflection.AssemblyVersion("0.8.7.0")]
+[assembly:System.Reflection.AssemblyFileVersion("0.8.7.0")]
 [assembly:System.Reflection.AssemblyCompany("Retro Trans")]
 [assembly:System.Reflection.AssemblyProduct("Cross Hermit English")]
 
 namespace CrossHermit {
  public static class Core {
-  public const string Version="0.8.0", Product="CrossHermitEnglish";
-  public const string GameHash="ab1aea7af2d698488f7cc27a7a32a324c26898e931bbcd5bf7715c168fc02e2b";
+  public const string Version="0.8.7", Product="CrossHermitEnglish";
+  public const string GameHash="1528cdd767da95c91e1566a3384d773a9146db15fff190a654fd85f581c92670";
   public static readonly JavaScriptSerializer Json=new JavaScriptSerializer {MaxJsonLength=67108864};
   public static readonly UTF8Encoding Utf8=new UTF8Encoding(false);
   public static string Quote(string s) { var b=new StringBuilder("\"");int n=0;foreach(char c in s){if(c=='\\'){n++;continue;}if(c=='"'){b.Append('\\',n*2+1);b.Append('"');}else{b.Append('\\',n);b.Append(c);}n=0;}b.Append('\\',n*2);return b.Append('"').ToString(); }
@@ -35,7 +35,7 @@ namespace CrossHermit {
   public static bool Personal(string n){n=n.Replace('\\','/').ToLowerInvariant();return n.StartsWith("savedata/")||n=="option.bin"||n=="dgvoodoo.conf"||n=="crosshermitui.ini"||n=="crosshermitskills.ini"||n=="englishpatch/settings.json"||n=="englishpatch/compatibility.json"||n.StartsWith("englishpatch/logs/")||n.StartsWith("englishpatch/dumps/")||n.StartsWith("englishpatch/updatebackups/");}
   public static void AssertGameClosed(){if(Process.GetProcessesByName("Cross Hermit").Length>0||Process.GetProcessesByName("CrossHermit").Length>0)throw new IOException("Save and close Cross Hermit first.");}
   public static void ValidateRoot(string root){root=Full(root);NoLinks(root);if(root.Length<12||Same(root,Path.GetPathRoot(root))||Same(root,Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)))throw new IOException("Unsafe installation location.");if(!File.Exists(Path.Combine(root,"EnglishPatch/installation.json"))||!File.Exists(Path.Combine(root,"Cross Hermit.exe"))||Hash(Path.Combine(root,"Cross Hermit.exe"))!=GameHash)throw new IOException("This is not a supported Cross Hermit English installation.");}
-  public static string InstalledVersion(string root){try{string v=Convert.ToString(Read(Path.Combine(root,"EnglishPatch/installation.json"))["game_version"]);if(System.Text.RegularExpressions.Regex.IsMatch(v,@"^0\.\d+\.\d+$"))return v;}catch{}return "Unknown";}
+  public static string InstalledVersion(string root){try{if(File.Exists(Path.Combine(root,"Cross Hermit.exe"))&&Hash(Path.Combine(root,"Cross Hermit.exe"))==GameHash)return Version;string v=Convert.ToString(Read(Path.Combine(root,"EnglishPatch/installation.json"))["game_version"]);if(System.Text.RegularExpressions.Regex.IsMatch(v,@"^0\.\d+\.\d+$"))return v;}catch{}return "Unknown";}
   public static void RegisterPaths(string root){using(var k=Registry.CurrentUser.CreateSubKey(@"Software\Enterbrain\Cross Hermit")){k.SetValue("Ver.",65536,RegistryValueKind.DWord);foreach(string n in new[]{"InstallPath","VoicePath","CdromPath"})k.SetValue(n,Full(root)+"\\");}}
   public static Process Hidden(string exe,string args,string cwd){return Process.Start(new ProcessStartInfo(exe,args){WorkingDirectory=cwd,UseShellExecute=false,CreateNoWindow=true,WindowStyle=ProcessWindowStyle.Hidden});}
   public static string PowerShell {get{return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System),@"WindowsPowerShell\v1.0\powershell.exe");}}
@@ -46,7 +46,16 @@ namespace CrossHermit {
   public void Validate(){if(displayMode!="borderless"&&displayMode!="windowed")throw new IOException("Invalid display mode.");if(battlefield!="wide"&&battlefield!="classic")throw new IOException("Invalid battlefield layout.");if(resolution!="desktop"){var m=System.Text.RegularExpressions.Regex.Match(resolution,@"^(\d{3,4})x(\d{3,4})$");if(!m.Success)throw new IOException("Invalid resolution.");int w=Int32.Parse(m.Groups[1].Value),h=Int32.Parse(m.Groups[2].Value);if(w<1024||w>7680||h<720||h>4320)throw new IOException("Unsupported resolution.");}}
   public void Save(string p){Validate();Core.Write(p,this);}
   public static string Ini(string text,string section,string key,string value){string newline=text.Contains("\r\n")?"\r\n":"\n";var lines=System.Text.RegularExpressions.Regex.Split(text,"\\r?\\n").ToList();int start=-1,end=lines.Count;for(int i=0;i<lines.Count;i++){if(System.Text.RegularExpressions.Regex.IsMatch(lines[i],@"^\s*\["+System.Text.RegularExpressions.Regex.Escape(section)+@"\]\s*$",System.Text.RegularExpressions.RegexOptions.IgnoreCase)){start=i;continue;}if(start>=0&&System.Text.RegularExpressions.Regex.IsMatch(lines[i],@"^\s*\[")){end=i;break;}}if(start<0){lines.Add("["+section+"]");lines.Add(key+" = "+value);}else{var found=new List<int>();for(int i=start+1;i<end;i++)if(System.Text.RegularExpressions.Regex.IsMatch(lines[i],@"^\s*"+System.Text.RegularExpressions.Regex.Escape(key)+@"\s*=",System.Text.RegularExpressions.RegexOptions.IgnoreCase))found.Add(i);if(found.Count>1)throw new IOException("Duplicate setting: "+section+"/"+key);if(found.Count==1)lines[found[0]]=key+" = "+value;else lines.Insert(end,key+" = "+value);}return String.Join(newline,lines);}
-  public Dictionary<string,byte[]> Plan(string root,string desktop){Validate();if(!System.Text.RegularExpressions.Regex.IsMatch(desktop,@"^\d{3,4}x\d{3,4}$"))throw new IOException("Desktop resolution unavailable.");string dg=File.ReadAllText(Path.Combine(root,"dgVoodoo.conf")),ui=File.ReadAllText(Path.Combine(root,"CrossHermitUI.ini"));string[,] rows={{"General","FullScreenMode",displayMode=="windowed"?"false":"true"},{"General","ScalingMode","stretched_ar"},{"General","KeepWindowAspectRatio","true"},{"GeneralExt","FullscreenAttributes","fake"},{"GeneralExt","DesktopResolution",desktop},{"DirectX","Resolution",resolution=="desktop"?desktop:resolution},{"DirectX","AppControlledScreenMode","false"}};for(int i=0;i<rows.GetLength(0);i++)dg=Ini(dg,rows[i,0],rows[i,1],rows[i,2]);ui=Ini(ui,"Display","TitleWidescreen",battlefield=="wide"?"true":"false");return new Dictionary<string,byte[]> {{"dgVoodoo.conf",Core.Utf8.GetBytes(dg)},{"CrossHermitUI.ini",Core.Utf8.GetBytes(ui)}};}
-  public void Apply(string root,string desktop){Core.AssertGameClosed();var plan=Plan(root,desktop);var old=new Dictionary<string,byte[]>();var written=new List<string>();foreach(var x in plan)old[x.Key]=File.ReadAllBytes(Path.Combine(root,x.Key));try{foreach(var x in plan){Core.Atomic(Path.Combine(root,x.Key),x.Value);written.Add(x.Key);}}catch{foreach(string n in written)Core.Atomic(Path.Combine(root,n),old[n]);throw;}}
+  public string EffectiveResolution(string desktop,string windowLimit=null){
+   Validate();
+   Func<string,int[]> size=value=>{var m=System.Text.RegularExpressions.Regex.Match(value??"",@"^(\d{1,5})x(\d{1,5})$");if(!m.Success)throw new IOException("Display size unavailable.");int w=Int32.Parse(m.Groups[1].Value),h=Int32.Parse(m.Groups[2].Value);if(w<1||h<1)throw new IOException("Display size unavailable.");return new[]{w,h};};
+   int[] bounds=size(resolution=="desktop"?desktop:resolution);
+   if(displayMode=="windowed"&&windowLimit!=null){int[] limit=size(windowLimit);bounds[0]=Math.Min(bounds[0],limit[0]);bounds[1]=Math.Min(bounds[1],limit[1]);}
+   int rw=battlefield=="wide"?16:4,rh=battlefield=="wide"?9:3;
+   int scale=Math.Min(bounds[0]/rw,bounds[1]/rh);if(scale<1)throw new IOException("The display area is too small.");
+   return (scale*rw)+"x"+(scale*rh);
+  }
+  public Dictionary<string,byte[]> Plan(string root,string desktop,string windowLimit=null){Validate();if(!System.Text.RegularExpressions.Regex.IsMatch(desktop,@"^\d{3,4}x\d{3,4}$"))throw new IOException("Desktop resolution unavailable.");string dg=File.ReadAllText(Path.Combine(root,"dgVoodoo.conf")),ui=File.ReadAllText(Path.Combine(root,"CrossHermitUI.ini"));string[,] rows={{"General","FullScreenMode",displayMode=="windowed"?"false":"true"},{"General","ScalingMode","stretched_ar"},{"General","KeepWindowAspectRatio","true"},{"GeneralExt","FullscreenAttributes","fake"},{"GeneralExt","DesktopResolution",desktop},{"DirectX","Resolution",EffectiveResolution(desktop,windowLimit)},{"DirectX","AppControlledScreenMode","false"}};for(int i=0;i<rows.GetLength(0);i++)dg=Ini(dg,rows[i,0],rows[i,1],rows[i,2]);ui=Ini(ui,"Display","TitleWidescreen",battlefield=="wide"?"true":"false");return new Dictionary<string,byte[]> {{"dgVoodoo.conf",Core.Utf8.GetBytes(dg)},{"CrossHermitUI.ini",Core.Utf8.GetBytes(ui)}};}
+  public void Apply(string root,string desktop,string windowLimit=null){Core.AssertGameClosed();var plan=Plan(root,desktop,windowLimit);var old=new Dictionary<string,byte[]>();var written=new List<string>();foreach(var x in plan)old[x.Key]=File.ReadAllBytes(Path.Combine(root,x.Key));try{foreach(var x in plan){Core.Atomic(Path.Combine(root,x.Key),x.Value);written.Add(x.Key);}}catch{foreach(string n in written)Core.Atomic(Path.Combine(root,n),old[n]);throw;}}
  }
 }

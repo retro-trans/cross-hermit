@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "cases": 34,
+  "game_started": false,
+  "installation_modified": false,
+  "checks": "New executable validation; corrupt executable refusal; version display; ultrawide aspect, window fit and child DPI plan"
+}

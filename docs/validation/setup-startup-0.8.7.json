@@ -1,0 +1,26 @@
+{
+  "version": "0.8.7",
+  "passed": true,
+  "cases": [
+    {
+      "case": "disc-fixture",
+      "exit_code": 0,
+      "visible": true,
+      "title": "Cross Hermit English \u00b7 Setup 0.8.7",
+      "source": "PROJECT\\work\\ui\\iso-0.8.7\\disc-fixture",
+      "destination_written": false,
+      "game_started": false
+    },
+    {
+      "case": "standalone",
+      "exit_code": 0,
+      "visible": true,
+      "title": "Cross Hermit English \u00b7 Setup 0.8.7",
+      "source": "PROJECT\\work\\ui\\iso-0.8.7\\disc-fixture",
+      "destination_written": false,
+      "game_started": false
+    }
+  ],
+  "game_started": false,
+  "disc_fixture_not_mounted": true
+}
