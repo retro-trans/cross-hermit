@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "retro_trans_version": "0.5.21",
+  "retro_trans_commit": "95f17b987466342edb188eccc54ffb0347c83a68",
+  "mode": "Apply xdelta",
+  "published_zip_downloaded": true,
+  "credentials_used": false,
+  "zip_sha256": "d354f9595e630b2a17bc1aa1549a636be251542e3de553399336cd188327bdb4",
+  "patch_sha256": "70fe73c9257b27bc0482452fc3f5c14ab523cb088e55f5fa54ceb358a83b463e",
+  "target_bytes": 770535424,
+  "target_sha256": "8a3ecfec28270ebe77fcb586d2c52f358ed8105a41a4782c3aecf71c849ce5ce",
+  "source_sha256": "34a7a1da0e9bb9da44a7397d6873d91d72bced5229ca0cb46d1555f0f95a93f9",
+  "original_unchanged": true,
+  "game_launched": false,
+  "automatic_catalog_tested": false,
+  "elapsed_seconds": 27.109
+}

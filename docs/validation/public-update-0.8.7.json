@@ -1,0 +1,12 @@
+{
+  "payload_bytes": 110271421,
+  "anonymous": true,
+  "manifest_downloaded": true,
+  "version": "0.8.7",
+  "passed": true,
+  "game_started": false,
+  "release_state": "available",
+  "payload_downloaded": true,
+  "payload_sha256": "c2f15d76223181832d20db0cd1a0fdb93b86b6447eea6755475edab479fd51f1",
+  "installed_user_game_modified": false
+}

@@ -12,7 +12,7 @@ Cumulative update from the first public release, 0.8.0.
 - Translate the player-name dialog heading and both normal/selected Confirm and Cancel captions, preserving the original input/IME behavior.
 - Deliver the complete fresh-install ISO delta and cumulative English-install updater. Retain bundled locale support, native launcher/uninstaller and all previous game changes.
 
-Validation: 7,985 installed file hashes; two compiled setup entry-point probes using an extracted disc fixture; native uninstall with synthetic save backup; nine supported English update versions with 533 payload files and six preserved personal files each; 43 safety/rollback cases; 34 native app checks; 12 update-confirmation flow cases; inherited compiled HUD and native description/image checks. ISO reconstruction must match the complete target SHA-256. No game session or full playthrough was run during this release task.
+Validation: 7,985 installed file hashes; two compiled setup entry-point probes using an extracted disc fixture; native uninstall with synthetic save backup; nine supported English update versions with 533 payload files and six preserved personal files each; 43 safety/rollback cases; 34 native app checks; 12 update-confirmation flow cases; inherited compiled HUD and native description/image checks. ISO reconstruction must match the complete target SHA-256. No game session or full playthrough was run during this release task. Anonymous public updater download, Retro Trans Automatic (backend and released Windows app) and Apply xdelta checks all passed with exact output hashes and the original preserved. The hosted catalog refresh passed without dropping existing entries.
 
 ## 0.8.0 — 2026-11-06
 

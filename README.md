@@ -136,7 +136,7 @@ The social-preview composition was generated from supplied Cross Hermit artwork 
 
 Validation covers all 7,985 fresh-install file hashes, compiled setup startup, native uninstall with a verified synthetic save backup, nine supported English update fixtures, 43 updater safety/rollback checks and 34 native application checks. The confirmation flow has 12 offline cases, and the game changes have compiled HUD/native resource and layout checks. Your saves and settings are excluded from distribution.
 
-The ISO patch was decoded back to the complete expected ISO and all original disc files were verified unchanged. Release validation also checks anonymous updater downloads and both Retro Trans **Automatic** and **Apply xdelta**, including the released Windows app, against the public assets. See [ISO patching verification](docs/RETRO-TRANS.md).
+The ISO patch was decoded back to the complete expected ISO and all original disc files were verified unchanged. Anonymous updater downloads and both Retro Trans **Automatic** and **Apply xdelta** passed against the public assets, including the released Windows app's Automatic route. See [ISO patching verification](docs/RETRO-TRANS.md).
 
 These checks do not establish that every mission, opening sequence or hardware configuration works correctly. A complete live playthrough remains pending. The user's installed game was not changed or started during release testing.
 

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "version": "0.8.7",
+  "existing_catalog_records_preserved": true,
+  "catalog_sha256": "9e68a9370939cb025fbbcd561c71b4ff2a0442383d3d12c43f3f5f22fe8c389d",
+  "workflow": "https://github.com/retro-trans/retro-trans-tools/actions/runs/42336242996"
+}

@@ -58,6 +58,10 @@ Retro Trans's manual mode keeps xdelta's checksum checks enabled and reports the
 
 The release xdelta was decoded to a separate ISO and checked against the complete target size and SHA-256 above. The original ISO was rehashed unchanged. All 21 original disc files were also verified byte for byte in the rebuilt ISO.
 
-Before publication, the standard manifest and validation record are imported into a staged Retro Trans catalog, preserving the existing entries and checking the original → 0.8.7 route. Publication verification then downloads the public patch anonymously and checks **Automatic**, the released Windows 0.5.21 app's `--automatic-binary` route and the **Apply xdelta** `manual_patch` entry point against the same full output hash. Current records are linked here after those checks finish.
+On 2026-11-07, **Automatic** passed with the public catalog and a clean download cache. It recognized the original ISO, downloaded and verified the published bare xdelta, produced the exact target above and recognized that output as current. The released Windows Retro Trans 0.5.21 app also passed its `--automatic-binary` route using a separate clean patch cache. Both runs were anonymous and preserved the original. See the [Automatic verification record](validation/retro-trans-automatic-0.8.7.json) and the successful [hosted catalog refresh](https://github.com/retro-trans/retro-trans-tools/actions/runs/42336242996). All previous catalog entries were preserved.
+
+The published ISO patch ZIP was separately downloaded and verified, then applied through the **Apply xdelta** `manual_patch` entry point in Retro Trans 0.5.21 (source commit `95f17b987466342edb188eccc54ffb0347c83a68`). The complete output size/hash matched, and the original remained unchanged. See the [manual verification record](validation/retro-trans-manual-0.8.7.json).
+
+The production launcher updater also found 0.8.7 anonymously and downloaded/verified the entire updater payload. See its [verification record](validation/public-update-0.8.7.json).
 
 These are ISO-patching checks, not a game playthrough or a test of compressed CHD/RVZ inputs. The graphical patching interface is not driven by these integration tests.
