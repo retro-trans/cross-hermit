@@ -121,7 +121,7 @@ This is an unofficial fan translation. Original game content and artwork belong 
 
 | Role | Contributor |
 | --- | --- |
-| Project direction and playtesting | [binhlt0402](https://github.com/binhlt0402), retro-trans |
+| Project lead and playtesting | [**pow**](https://github.com/binhlt0402), retro-trans |
 | Translation, editing, tooling and reverse engineering assistance | OpenAI Codex, directed by the project lead |
 
 The translation is machine-produced with large language models and then edited, rather than a hand translation by a fluent translator. Names and terminology follow the project's glossary. Review uses accuracy checks, an editorial pass for clarity and character voice, and final proofreading; substantive wording changes are checked again for meaning.
