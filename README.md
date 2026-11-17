@@ -8,7 +8,7 @@ English translation and modern Windows support for **Cross Hermit: Guardian of t
 
 The public test version is ready to play, but we have not tested every mission or hardware configuration. Bug reports, proofreading and playtesting are welcome. Join the retro-trans Discord:
 
-**[discord.gg/MssepShjmB](https://discord.gg/MssepShjmB)**
+**[discord.gg/nZBZfTDfCP](https://discord.gg/nZBZfTDfCP)**
 
 You can also [open an issue](https://github.com/retro-trans/cross-hermit/issues). Include the installed version, what happened, steps to reproduce it and a screenshot where possible.
 
